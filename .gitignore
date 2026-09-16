@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.ruff_cache/
+.venv/
+.DS_Store
+results/*
+!results/.gitkeep
+data/
+
+**/*.pkl
+.env
+execution_config
+unsuccessful_deployment_list.txt

@@ -1,0 +1,15 @@
+{
+  "epochs": {
+    "self": 5,
+    "wafl": 5
+  },
+  "contact_pattern": "rwp_n10_a0500_r100_p10_s01.json",
+  "wafl_phase": {
+    "aggregation_strategy": "FedAvg",
+    "batch_size": 32,
+    "learning_rate": 0.001,
+    "coefficiency": 1.0,
+    "sparsification_K": 0.5,
+    "quantization_Q": 4
+  }
+}

@@ -1,0 +1,38 @@
+[project]
+name = "wafl-testbed"
+version = "0.1.0"
+description = "The WAFL Emulation Testbed project, launched in April 2025, is trying to develop a research platform for WAFL's device-to-device collaborative learning over real TCP/IP-based communications."
+readme = "README.md"
+requires-python = "==3.11.4"
+dependencies = [
+    "numpy>=2.3.1",
+    "pre-commit>=4.2.0",
+    "ruff>=0.12.0",
+    "torch>=2.7.1",
+    "paramiko>=2.12.0",
+    "torchvision>=0.22.1",
+    "pandas>=2.3.2",
+    "matplotlib>=3.10.6",
+    "seaborn>=0.13.2",
+    "tqdm>=4.67.1",
+    "scapy>=2.6.1",
+]
+
+[tool.ruff]
+target-version = "py311"
+builtins = ["_"]
+exclude = [
+    ".git",
+    ".venv",
+    "assets",
+]
+indent-width = 4
+line-length = 128
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "auto"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
